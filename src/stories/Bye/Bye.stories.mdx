@@ -1,0 +1,25 @@
+import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Bye from "./Bye";
+import { withKnobs, text, boolean } from "@storybook/addon-knobs";
+
+<Meta title="components|basic/Bye" component={Bye} decorators={[withKnobs]} />
+
+# Button
+
+<Preview>
+  <Story name="Default">
+    <Bye name={text("name", "stories.js")} big={boolean("big", "stories.js")} />
+  </Story>
+</Preview>
+
+가나다라마바사
+
+## Props
+
+여기 설명 들어가요
+
+<Props of={Bye} />
+
+## 세번째
+
+가나다
